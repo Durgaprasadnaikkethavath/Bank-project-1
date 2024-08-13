@@ -1,11 +1,17 @@
 nav {
   background-color: #36366f;
-  color: white;
   padding: 10px;
-  margin-bottom: 10px;
 }
 ul {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }

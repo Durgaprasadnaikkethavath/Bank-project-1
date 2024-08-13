@@ -3,8 +3,10 @@ import { useState } from "react";
 import axios from "axios";
 import "./Registration.css";
 import logoImage from "../image/Logo (1).png";
+import { useNavigate } from "react-router-dom";
 
 const Registration = () => {
+  const navigate = useNavigate("");
   const [signupData, setSignupData] = useState({
     username: "",
     password: "",
@@ -17,6 +19,7 @@ const Registration = () => {
     try {
       await axios.post("http://localhost:3001/api/signup", signupData);
       console.log("signup successful");
+      navigate("/login");
     } catch (error) {
       console.error("signup failed", error);
     }
