@@ -1,0 +1,32 @@
+.home-container {
+  display: flex;
+}
+
+.image-container {
+  background-image: url("./image/Home.png");
+  width: 100vh;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+.text-container {
+  max-width: 500px;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 120px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-container h2 {
+  color: #333366;
+  padding-left: 20px;
+}
+.text-container p {
+  color: #666666;
+  padding-left: 20px;
+}
+.text-container img {
+  width: 500px;
+  height: 70px;
+}
